@@ -1,0 +1,60 @@
+@import 'fonts';
+@import 'variables';
+@import 'slick';
+@import 'navbar';
+@import 'search';
+@import 'about-us';
+@import 'slider';
+@import 'product-display';
+@import 'products';
+@import 'product-information';
+@import 'off-banner';
+@import 'all-products';
+@import 'cart-card';
+@import 'checkout';
+@import 'coming-soon';
+@import 'footer';
+@import 'loader';
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%
+}
+
+body {
+    margin: 0
+}
+
+h1 {
+    font-family: 'Poppins';
+    font-size: 35px;
+}
+
+h2 {
+    small {
+        font-size: 15px;
+        font-weight: 300;
+    }
+}
+
+.slider-separator {
+    margin-top: 447px;
+}
+
+.swal-modal {
+    font-family: 'Raleway';
+}
+
+.align-center {
+    text-align: center;
+    img {
+        margin-bottom: 30px;
+    }
+}
+
+.no-mb {
+    margin-bottom: 0;
+}
+
+.no-mt {
+    margin-top: 0;
+}
