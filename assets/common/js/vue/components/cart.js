@@ -15,7 +15,7 @@ var cart = Vue.component('cart', {
             var ProductIds = this.Cart.map(x => x.Product_Id).join(',');
 
             showLoader();
-            this.$http.get(APIUrl() + `AdminContent/GetProducts/${ProductIds}`, {
+            this.$http.get(APIUrl() + `AdminProduct/GetProducts/${ProductIds}`, {
                 headers: {
                     APIKey: config.BusgarageAPIKey
                 }
@@ -58,8 +58,8 @@ var cart = Vue.component('cart', {
         <div>
             <navbar></navbar>
             <div class="align-center" v-if="Cart === null || Cart === undefined">
-                <h1>Tu carrito de compras esta vacio</h1>
-                <img src="./assets//common/img/sadVW.jpg" />
+                <h1>Tu carrito de compras está vacío</h1>
+                <img class="w50" src="./assets//common/img/empty-cart.jpg" alt="Empty Cart" />
             </div>
             <div v-else>
                 <cart-card v-for="product in Products" v-bind:Product="product"></cart-card>

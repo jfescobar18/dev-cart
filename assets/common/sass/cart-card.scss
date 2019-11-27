@@ -25,7 +25,7 @@
         .price {
             font-weight: bold;
             font-size: 22px;
-            color: $MainRed;
+            color: $MainColor;
             margin-top: 10px;
         }
         .quantity {
@@ -60,7 +60,7 @@ hr.cart-end {
     text-align: right;
     margin-right: 40px;
     span {
-        color: $MainRed;
+        color: $MainColor;
     }
 }
 
@@ -68,7 +68,7 @@ hr.cart-end {
     button {
         font-family: 'Raleway';
         text-decoration: none;
-        color: $MainRed;
+        color: $MainColor;
         background: none;
         border: none;
         outline: none;
@@ -76,7 +76,7 @@ hr.cart-end {
             cursor: pointer;
         }
         i {
-            color: $MainRed;
+            color: $MainColor;
         }
     }
 }

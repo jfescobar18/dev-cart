@@ -165,7 +165,7 @@ var checkout = Vue.component('checkout', {
         },
         GetTotalAmmount: function () {
             showLoader();
-            this.$http.get(APIUrl() + `AdminContent/GetProducts/${this.Order.Order_Product_Ids}`, {
+            this.$http.get(APIUrl() + `AdminProduct/GetProducts/${this.Order.Order_Product_Ids}`, {
                 headers: {
                     APIKey: config.BusgarageAPIKey
                 }

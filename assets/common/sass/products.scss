@@ -2,7 +2,7 @@
     width: 180px;
     font-family: 'Raleway';
     s {
-        color: $MainRed;
+        color: $MainColor;
         display: inline-block;
         text-decoration: none;
         position: relative;
@@ -45,12 +45,12 @@
     .price {
         font-weight: bold;
         font-size: 18px;
-        color: $MainRed;
+        color: $MainColor;
         margin-top: 17px;
     }
     &.new {
         .label-box {
-            background-color: $MainRed;
+            background-color: $MainColor;
             font-size: 12px;
             text-align: center;
             color: #fff;
@@ -64,7 +64,7 @@
     }
     &.offer {
         .label-box {
-            background-color: $MainRed;
+            background-color: $MainColor;
             font-size: 12px;
             text-align: center;
             color: #fff;

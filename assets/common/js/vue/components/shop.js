@@ -10,7 +10,7 @@ var shop = Vue.component('shop', {
     methods: {
         loadNewProducts: function () {
             showLoader();
-            this.$http.get(APIUrl() + 'AdminContent/GetNew_Products', {
+            this.$http.get(APIUrl() + 'AdminProduct/GetNew_Products', {
                 headers: {
                     APIKey: config.BusgarageAPIKey
                 }
@@ -35,7 +35,7 @@ var shop = Vue.component('shop', {
         },
         loadDiscountProducts: function () {
             showLoader();
-            this.$http.get(APIUrl() + 'AdminContent/GetDiscount_Products', {
+            this.$http.get(APIUrl() + 'AdminProduct/GetDiscount_Products', {
                 headers: {
                     APIKey: config.BusgarageAPIKey
                 }

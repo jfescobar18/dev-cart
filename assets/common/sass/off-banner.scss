@@ -11,9 +11,10 @@
         top: 40%;
         h1 {
             color: #fff;
+            text-shadow: 2px 2px 8px $MediumGray;
         }
         a {
-            background: $MainRed;
+            background: $MainColor;
             color: #fff;
             font-family: 'Poppins';
             letter-spacing: 5px;

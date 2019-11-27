@@ -10,7 +10,7 @@ var home = Vue.component('home', {
     methods: {
         loadNewProducts: function () {
             showLoader();
-            this.$http.get(APIUrl() + 'AdminContent/GetNew_Products', {
+            this.$http.get(APIUrl() + 'AdminProduct/GetNew_Products', {
                 headers: {
                     APIKey: config.BusgarageAPIKey
                 }
@@ -34,7 +34,7 @@ var home = Vue.component('home', {
         },
         loadSoonProducts: function () {
             showLoader();
-            this.$http.get(APIUrl() + 'AdminContent/GetSoon_Products', {
+            this.$http.get(APIUrl() + 'AdminProduct/GetSoon_Products', {
                 headers: {
                     APIKey: config.BusgarageAPIKey
                 }

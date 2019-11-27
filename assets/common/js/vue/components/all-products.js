@@ -37,7 +37,7 @@ var all_products = Vue.component('all-products', {
         },
         loadCategories: function () {
             showLoader();
-            this.$http.get(APIUrl() + 'AdminContent/GetCategories', {
+            this.$http.get(APIUrl() + 'AdminProduct/GetCategories', {
                 headers: {
                     APIKey: config.BusgarageAPIKey
                 }
@@ -55,7 +55,7 @@ var all_products = Vue.component('all-products', {
         },
         loadAllProducts: function () {
             showLoader();
-            this.$http.get(APIUrl() + 'AdminContent/GetAllProducts', {
+            this.$http.get(APIUrl() + 'AdminProduct/GetAllProducts', {
                 headers: {
                     APIKey: config.BusgarageAPIKey
                 }
@@ -80,7 +80,7 @@ var all_products = Vue.component('all-products', {
         },
         searchProducts: function () {
             showLoader();
-            this.$http.get(APIUrl() + `AdminContent/Search_Products/${this.SearchWord}`, {
+            this.$http.get(APIUrl() + `AdminProduct/Search_Products/${this.SearchWord}`, {
                 headers: {
                     APIKey: config.BusgarageAPIKey
                 }

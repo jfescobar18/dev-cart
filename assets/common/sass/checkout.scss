@@ -55,7 +55,7 @@
         margin-bottom: 25px;
         width: 33%;
         margin-left: 33%;
-        background: $MainRed;
+        background: $MainColor;
         color: #fff;
         font-family: 'Raleway';
         letter-spacing: 5px;
@@ -99,10 +99,10 @@
         position: absolute;
         left: 9px;
         top: 13px;
-        background: $MainRed;
+        background: $MainColor;
         width: 2px;
         height: 2px;
-        box-shadow: 2px 0 0 $MainRed, 4px 0 0 $MainRed, 4px -2px 0 $MainRed, 4px -4px 0 $MainRed, 4px -6px 0 $MainRed, 4px -8px 0 $MainRed;
+        box-shadow: 2px 0 0 $MainColor, 4px 0 0 $MainColor, 4px -2px 0 $MainColor, 4px -4px 0 $MainColor, 4px -6px 0 $MainColor, 4px -8px 0 $MainColor;
         transform: rotate(45deg);
     }
 }

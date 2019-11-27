@@ -17,7 +17,7 @@ var buy_product = Vue.component('buy-product', {
         loadProduct: function () {
             this.Product_Id = this.$route.params['Product_Id'];
             showLoader();
-            this.$http.get(APIUrl() + `AdminContent/GetProduct/${this.Product_Id}`, {
+            this.$http.get(APIUrl() + `AdminProduct/GetProduct/${this.Product_Id}`, {
                 headers: {
                     APIKey: config.BusgarageAPIKey
                 }
@@ -41,7 +41,7 @@ var buy_product = Vue.component('buy-product', {
         },
         loadProductGalery: function () {
             showLoader();
-            this.$http.get(APIUrl() + `AdminContent/GetProductGaleryImages/${this.Product_Id}`, {
+            this.$http.get(APIUrl() + `AdminProduct/GetProductGaleryImages/${this.Product_Id}`, {
                 headers: {
                     APIKey: config.BusgarageAPIKey
                 }
@@ -77,7 +77,7 @@ var buy_product = Vue.component('buy-product', {
         },
         loadRealtedProducts: function () {
             showLoader();
-            this.$http.get(APIUrl() + `AdminContent/Search_Products/${this.Product.Product_Name}`, {
+            this.$http.get(APIUrl() + `AdminProduct/Search_Products/${this.Product.Product_Name}`, {
                 headers: {
                     APIKey: config.BusgarageAPIKey
                 }
