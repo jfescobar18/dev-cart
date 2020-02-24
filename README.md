@@ -30,7 +30,7 @@ To start using the web admin you need to create a file called ```config.js``` in
 
 ```javascript
 const config = {
-    BusgarageAPIKey: 'APIKey',
+    APIKey: 'APIKey',
     LocalhostURL: 'http://localhost:xxxx/',
     ProductionURL: 'https://domain.com/'
 }

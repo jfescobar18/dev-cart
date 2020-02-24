@@ -80,7 +80,7 @@ var checkout = Vue.component('checkout', {
             showLoader();
             this.$http.get(APIUrl() + `AdminContent/GetSuburbs/${this.Order_Client_Zip}`, {
                 headers: {
-                    APIKey: config.BusgarageAPIKey
+                    APIKey: window.config.APIKey
                 }
             }).then(
                 response => {

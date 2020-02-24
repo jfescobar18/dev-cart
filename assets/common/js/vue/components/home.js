@@ -12,7 +12,7 @@ var home = Vue.component('home', {
             showLoader();
             this.$http.get(APIUrl() + 'AdminProduct/GetNew_Products', {
                 headers: {
-                    APIKey: config.BusgarageAPIKey
+                    APIKey: window.config.APIKey
                 }
             }).then(
                 response => {
@@ -36,7 +36,7 @@ var home = Vue.component('home', {
             showLoader();
             this.$http.get(APIUrl() + 'AdminProduct/GetSoon_Products', {
                 headers: {
-                    APIKey: config.BusgarageAPIKey
+                    APIKey: window.config.APIKey
                 }
             }).then(
                 response => {

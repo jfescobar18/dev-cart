@@ -17,7 +17,7 @@ var cart = Vue.component('cart', {
             showLoader();
             this.$http.get(APIUrl() + `AdminProduct/GetProducts/${ProductIds}`, {
                 headers: {
-                    APIKey: config.BusgarageAPIKey
+                    APIKey: window.config.APIKey
                 }
             }).then(
                 response => {

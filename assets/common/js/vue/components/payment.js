@@ -102,7 +102,7 @@ var checkout = Vue.component('checkout', {
                 UseCardPoints: this.use_card_points
             }, {
                 headers: {
-                    APIKey: config.BusgarageAPIKey
+                    APIKey: window.config.APIKey
                 }
             }).then(
                 response => {
@@ -136,7 +136,7 @@ var checkout = Vue.component('checkout', {
                 Amount: this.Order.Total_Ammount
             }, {
                 headers: {
-                    APIKey: config.BusgarageAPIKey
+                    APIKey: window.config.APIKey
                 }
             }).then(
                 response => {
@@ -151,7 +151,7 @@ var checkout = Vue.component('checkout', {
                     }).then(() => {
                         localStorage.removeItem('Cart');
                         localStorage.removeItem('OrderJson');
-                        var win = window.open(`https://sandbox-dashboard.openpay.mx/paynet-pdf/${config.OpenpayID}/${response.body.OpenpayResponse.payment_method.reference}`, '_blank');
+                        var win = window.open(`https://sandbox-dashboard.openpay.mx/paynet-pdf/${window.config.OpenpayID}/${response.body.OpenpayResponse.payment_method.reference}`, '_blank');
                         win.focus();
                         this.$router.push("/Shop");
                     });
@@ -167,7 +167,7 @@ var checkout = Vue.component('checkout', {
             showLoader();
             this.$http.get(APIUrl() + `AdminProduct/GetProducts/${this.Order.Order_Product_Ids}`, {
                 headers: {
-                    APIKey: config.BusgarageAPIKey
+                    APIKey: window.config.APIKey
                 }
             }).then(
                 response => {
@@ -296,9 +296,9 @@ var checkout = Vue.component('checkout', {
             this.GetTotalAmmount();
         }
 
-        OpenPay.setId(config.OpenpayID);
-        OpenPay.setApiKey(config.OpenpayPublicKey);
-        OpenPay.setSandboxMode(config.OpenpayUseSandBox);
+        OpenPay.setId(window.config.OpenpayID);
+        OpenPay.setApiKey(window.config.OpenpayPublicKey);
+        OpenPay.setSandboxMode(window.config.OpenpayUseSandBox);
         this.deviceSessionId = OpenPay.deviceData.setup("payment-form", "deviceIdHiddenFieldName");
     }
 });

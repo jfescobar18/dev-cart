@@ -9,7 +9,7 @@ var off_banner = Vue.component('off-banner', {
             showLoader();
             this.$http.get(APIUrl() + 'AdminContent/GetOffersImage', {
                 headers: {
-                    APIKey: config.BusgarageAPIKey
+                    APIKey: window.config.APIKey
                 }
             }).then(
                 response => {
